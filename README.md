@@ -1,4 +1,4 @@
-# Azure Administrator | AZ-900 ve AZ-104 Sertifika Sınavlarına Hazırlık Eğitimi
+# Azure Administrator | AZ-104 ve AZ-900 Sertifika Sınavlarına Hazırlık Eğitimi
 
 Ayti.tech olarak temel hedeflerimizden bir tanesini, Türk bilişim sektörü çalışanlarının bilgi seviyesini bu alanda ileri gelen ülkelerdeki bilişim çalışanlarından daha ileriye taşımak olarak belirledik. Bu hedef doğrultusunda Türk bilişim çalışanlarının dil bariyerine takılmadan kendi dillerinde eğitim alabilmeleri için birçok önemli konuda eğitimler hazırlıyoruz. Bu eğitimlerden dördüncüsünü de son dönemlerin yükselen public cloud ortamlarından Azure üstüne hazırladık. Genellikle Azure olarak adlandırılan Microsoft Azure, Microsoft’un temel bulut bilişim platformdur. Microsoft tarafından birçok IAAS, PAAS ve SAAS tabanlı servisin, kullandığın kadar öde de dahil bir ok ödeme seçeneği ile hizmet olarak sunulduğu Azure platformu, public cloud providerlar arasında AWS ve Google Cloud’la birlikte sektörün en önemli oyuncularından biridir. Ve bizler de sizlerin bu alandaki bilgi seviyesini yükseltmeyi amaçlıyoruz.
 
