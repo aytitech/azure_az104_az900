@@ -56,3 +56,21 @@ Azure Rest API: https://docs.microsoft.com/en-us/rest/api/azure/
 
 ---
 ## Kısım 4
+
+Azure Subscription Tipleri: https://azure.microsoft.com/en-us/support/legal/offer-details/
+
+Resource Providers: https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/azure-services-resource-providers
+
+Azure Policy GitHub Repository: https://github.com/Azure/azure-policy 
+
+Microsoft Identity Platform Authentication Library: https://docs.microsoft.com/en-us/azure/active-directory/develop/reference-v2-libraries
+
+Azure Service Principal Oluşturma: https://docs.microsoft.com/en-us/cli/azure/create-an-azure-service-principal-azure-cli
+
+Managed Identity destekleyen Azure Servisleri: https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/managed-identities-status
+
+Azure İsim ve Tag Tavsiyeleri: https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/naming-and-tagging 
+
+Tag Desteğine Sahip Azure Servisleri: https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/tag-support
+
+Tag Policy: https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/tag-policies 
