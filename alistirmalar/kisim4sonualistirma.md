@@ -35,7 +35,8 @@ $ az group create --name "GroupB" --location westeurope
 
 - Tekrar "Resource Group" yönetim ekranına geçin ve burada "GroupB" isimli grubu bulun ve tıklayın.
 
-- Açılan ekranda soldaki menüde "Access control (IAM)" ekranına geçin ve "Add>Add Role Assignment" yolunu takip edin. Açılan listeden "Reader" rolünü seçin ve next ile devam ederek bir sonraki ekranda "+Select Member" butonuyla birinci alıştırmada oluşturduğunuz kullanıcıyı seçin ve işlemleri tamamlayın. 
+- Açılan ekranda soldaki menüde "Access control (IAM)" ekranına geçin ve "Add>Add Role Assignment" yolunu takip edin. Açılan listeden "Reader" rolünü seçin ve next ile devam ederek bir sonraki ekranda "+Select Member" butonuyla birinci alıştırmada oluşturduğunuz kullanıcıyı seçin ve işlemleri tamamlayın.
+
 </details>
 
 ***
@@ -46,6 +47,7 @@ $ az group create --name "GroupB" --location westeurope
 
 - Tarayıcınızın incognito mode özelliğini kullanarak yeni bir sayfa açın ve portal.azure.com adresinden Azure Portal’a birinci alıştırmada oluşturduğunuz kullanıcı ile oturum açın.
 - Azure Cli’da ```az logout``` komutuyla oturumu sonlandırın ve ardından tekrar ```azure login``` komutunu kullanın ve birinci alıştırmada oluşturduğunuz kullanıcı ile oturum açın.
+
 </details>
 
 ***
@@ -69,9 +71,11 @@ Code: AuthorizationFailed
   <summary>Cevabı görmek için genişletin</summary>
 
 Aşağıdaki komutu girdiğiniz zaman size "Admin Password:" yazısı olarak şifre oluşturmanız için bir adım çıkacak. Buraya 2 defa belirlediğiniz en az 12 haneli ve içerisinde büyük harf, küçük harf, rakam ve işaret olan bir şifre giriniz.
+
 ```shell
 $ az vm create --resource-group "GroupA" --name "ilksanalmakine" --image Win2019Datacenter --location westeurope
 ```
+
 </details>
 
 ***
@@ -81,9 +85,11 @@ $ az vm create --resource-group "GroupA" --name "ilksanalmakine" --image Win2019
   <summary>Cevabı görmek için genişletin</summary>
 
 "code":"AuthorizationFailed" hatası alarak oluşturamamanız gerekir. Çünkü bu kullanıcının GroupB üstünde sadece Reader rolü mevcut.
+
 ```shell
 $ az vm create --resource-group "GroupB" --name "ilksanalmakine" --image Win2019Datacenter --location westeurope
 ```
+
 </details>
 
 ***
@@ -357,7 +363,13 @@ $ curl -X GET -H "Authorization: Bearer [Token]" -H "Content-Type: application/j
 22: 200 TL'lık bir **Budget** oluşturun ve bu **Budget**’a ulaşıldığı zaman size mail göndermesini sağlayacak işlemleri tamamlayın.
 <details>
   <summary>Cevabı görmek için genişletin</summary>
-Al sana cevap.
+
+- Portalde arama kısmına "Subscriptions" yazın ve "Subscription" yönetim ekranına geçin.
+
+- Soldaki menüden "Budgets" ekranına gelin. +Add butonuna basın ve yeni bir budget oluşturma adımlarına başlayın. "Name" kısmına bir isim girin, "Reset Period" kısmı "Monthly" olarak seçilsin. "Creation date" ve "Expiration date" kısımlarını olduğu gibi bırakın. "Amount" kısmını TL ise 200, Euro ya da Dolar ise 10 değerini girin ve  
+
+- Bir sonraki adımda "Alert condition" kısmında tip olarak "Actual" ve "% of budget" kısmına da 90 değerini girin. "Alert recipients (email)" kısmına da email adresinizi girip "Create" butonuyla devam edin. 
+
 </details>
 
 ***
@@ -365,7 +377,23 @@ Al sana cevap.
 23: **Az PowerShell Module** kullanarak **GroupA** ve **GroupB** isimli **Resource Group**ları silin.
 <details>
   <summary>Cevabı görmek için genişletin</summary>
-Al sana cevap.
+
+```shell
+> Remove-AzResourceGroup -Name "GroupA"                           
+
+Confirm
+Are you sure you want to remove resource group 'GroupA'
+[Y] Yes  [N] No  [S] Suspend  [?] Help (default is "Y"): Y
+```
+
+```shell
+> Remove-AzResourceGroup -Name "GroupB"                           
+
+Confirm
+Are you sure you want to remove resource group 'GroupA'
+[Y] Yes  [N] No  [S] Suspend  [?] Help (default is "Y"): Y
+```
+
 </details>
 
 ***

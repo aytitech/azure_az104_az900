@@ -1,0 +1,1 @@
+# **[4. Kısım Sonu ALıştırmaları](./kisim4sonualistirma.md)**
