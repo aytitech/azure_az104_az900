@@ -94,7 +94,7 @@ $ az vm create --resource-group "GroupB" --name "ilksanalmakine" --image Win2019
 
 ***
 
-8: Tekrar kendi kullanıcınızla oturum açın **Subscription** bazında Delete aksiyonlu bir **Resource Lock** oluşturun.
+8: Tekrar kendi kullanıcınızla oturum açın ve **Subscription** bazında Delete aksiyonlu bir **Resource Lock** oluşturun.
 <details>
   <summary>Cevabı görmek için genişletin</summary>
 
@@ -123,8 +123,7 @@ $ az vm create --resource-group "GroupB" --name "ilksanalmakine" --image Win2019
 </details>
 
 ***
-
-19: Oluşturduğunuz **Resource Lock**’u **Azure Cli** aracılığıyla kaldırın.
+10: Oluşturduğunuz **Resource Lock**’u **Azure Cli** aracılığıyla kaldırın.
 <details>
   <summary>Cevabı görmek için genişletin</summary>
 
@@ -170,7 +169,6 @@ $ az lock delete --name dellock
 
 - Üst menüden "Remediation" kısmına gelin ve "Create a remediation task" checkbox'ını işaretleyi ve ardından "Review+Create" butonuyla devam ederek policy'i oluşturun.
 
-
 - Bir süre bekleyin "24 saat sürebilir max.". Sonrasında ilksanalmakine isimli sanal makinenizi bulun ve "Tags" kısmından tag’in eklendiğini teyit edin. 
 
 </details>
@@ -211,7 +209,7 @@ $ az lock delete --name dellock
 
 - Sol menüdeki "Assigments" kısmına tıklayın ve açılan ekranda "Assign Policy" butonuyla devam edin.
 
-- "Scope" kısmına tıklayın ve "Alistirma_Management_Group" isimli "Management Group" seçin. "Policy Definition" kısmında ... tıklayarak "Add a tag to resources" policy'sini seçin ve next ile devam edin.
+- "Scope" kısmına tıklayın ve "Alistirma_Management_Group" isimli "Management Group" seçin. "Policy Definition" kısmında ... tıklayarak "Allowed size SKUs" policy'sini seçin ve next ile devam edin.
 
 - Üst menüden "Parameters" kısmına gelin "Allowed size SKUs" kısmında tüm A ve B serilerini seçin. "İlk 30 seçenek, Standard_D1'e kadar olan tüm seçenekler işaretlenecek". "Review+Create" butonuyla devam ederek policy'i oluşturun.
 
@@ -219,7 +217,7 @@ $ az lock delete --name dellock
 
 ***
 
-16: *D* serisi bir **Sanal Makine** oluşturmayı deneyin ve oluşturamadığınızı görün. Sonrasında da şu ana yapmış olduğunu iki "Policy Assigment" işlemini de geri alın. 
+16: *D* serisi bir **Sanal Makine** oluşturmayı deneyin ve oluşturamadığınızı görün. Sonrasında da şu ana kadar yapmış olduğunuz iki "Policy Assigment" işlemini de geri alın. 
 <details>
   <summary>Cevabı görmek için genişletin</summary>
 
