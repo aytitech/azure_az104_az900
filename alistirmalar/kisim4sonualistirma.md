@@ -56,7 +56,7 @@ $ az group create --name "GroupB" --location westeurope
 <details>
   <summary>Cevabı görmek için genişletin</summary>
 
-Kullanıcısınız Subscription seviyesinde yetkisi olmadığından dolayı resource group oluşturamadınız. 
+Kullanıcınızın Subscription seviyesinde yetkisi olmadığından dolayı resource group oluşturamadınız. 
 ```shell
 $ az group create --name "GroupC" --location westeurope
 Code: AuthorizationFailed
